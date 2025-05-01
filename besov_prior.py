@@ -179,34 +179,5 @@ class besov_prior:
 
 
 
-
-if __name__=="__main__":
-
-    J = 10
-    N = 2**J
-    wavelet = 'db1'
-    alphagrid = np.linspace(-5,5, N)
-    xgrid = np.linspace(0,1,N)
-    prior = besov_prior(J,2*32)
-    beta = 1
-    mu = 0
-    lam = 32
-    alpha = np.exp(np.log(1/lam)/beta)
-    params = dict([('alpha',alpha), ('beta', beta), ('mu',mu),('lambda',lam)])
-    g, gdiff = prior.besov_to_normal(alphagrid)
-    Invmap=gennorm.ppf(xgrid, beta, loc=mu, scale=alpha)
-    g_true = -1/lam*np.sign(alphagrid)*np.log(1-2*np.abs(norm.cdf(alphagrid)-0.5))
-    gdiff_true = norm.pdf(alphagrid)/(lam*norm.cdf(-np.abs(alphagrid)))
-    fig2, ax2=plt.subplots(2,1)
-    ax2[0].plot(alphagrid,g)
-    ax2[0].plot(alphagrid,g_true)
-    ax2[1].plot(alphagrid,gdiff)
-    ax2[1].plot(alphagrid,gdiff_true)
-    print(np.sum(np.abs(g-g_true)),np.sum(np.abs(gdiff-gdiff_true)))
-    plt.show()
-
-
-
-
         
 

@@ -4,8 +4,6 @@ from scipy.stats import gennorm, norm
 from scipy import sparse
 import matplotlib.pyplot as plt
 from scipy.special import gamma
-#import cr.wavelets as wt
-#import jax.numpy as jnp
 # Class that defines the Besov prior with all its functionalities
 class besov_prior2D:
     def __init__(self,J,delt,level, slices, shape ,s=1, p=1, wavelet="db1"):

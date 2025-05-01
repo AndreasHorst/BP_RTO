@@ -26,7 +26,6 @@ class besov_prior:
         # Compute random draws
         #scale = np.sqrt(gamma(1/self.p)/gamma(3/self.p))*self.delt**(-1/self.p)
         scale = self.delt**(-1/self.p)
-        #print(scale)
         xi = gennorm.rvs(self.p, scale=scale, size=2**(self.J))
         # Compute coefficient weights
         weights = self.inverse_weights()
@@ -44,7 +43,7 @@ class besov_prior:
     
 
     def inverse_weights(self):
-        # inverse_weights2 computes in the inverse weights of the Besov prior using the natural wavelet weights.
+        # inverse_weights computes in the inverse weights of the Besov prior using the natural wavelet weights.
         # These weights is the one we will base the remaining methods on.
         # Dimension
         n = 2**self.J

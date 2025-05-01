@@ -13,16 +13,6 @@ class CT:
         # standard deviation of the likelihood
         self.lam = sigma
 
-        
-    # Forward operation
-    def forward_2(self,signal):
-        # Computes the radon transform
-        #return radon(signal, theta=self.theta)
-        #return radon(signal,theta=self.theta, circle=False)
-        n = int(len(signal))
-        forward = np.zeros((int(np.ceil(np.sqrt(2)*n)),len(self.theta)))
-        forward[0:n,0:n]=signal.reshape((n,n))
-        return forward
 
     def forward(self,signal):
         return radon(signal,theta=self.theta, circle=False)

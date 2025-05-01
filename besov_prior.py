@@ -24,8 +24,7 @@ class besov_prior:
 
     def sample(self):
         # Compute random draws
-        #scale = np.sqrt(gamma(1/self.p)/gamma(3/self.p))*self.delt**(-1/self.p)
-        scale = self.delt**(-1/self.p)
+        scale = np.sqrt(gamma(1/self.p)/gamma(3/self.p))*self.delt**(-1/self.p)
         xi = gennorm.rvs(self.p, scale=scale, size=2**(self.J))
         # Compute coefficient weights
         weights = self.inverse_weights()

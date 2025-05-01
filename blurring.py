@@ -45,14 +45,3 @@ class blurring:
         I = np.identity(N)
         return self.forward(I)    
 
-
-if __name__=="__main__":
-    x = np.linspace(0,1,10000)
-    signal = np.zeros_like(x)
-    signal[10:50]=1
-    sigma= 0.05
-    problem = blurring(x,sigma,1)
-    I = np.identity(len(x))
-    #print(problem.apply_blur(I))
-    #plt.plot(problem.apply_blur(signal))
-    plt.show()

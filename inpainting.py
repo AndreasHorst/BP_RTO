@@ -34,8 +34,6 @@ class inpainting:
         noise = np.random.standard_normal(size=Forward_data.shape)*self.lam
         # Adding the noise with relative noiselevel (noise_level)
         self.data = Forward_data + noise
-        # Setting the standard deviation of the likelihood as the standard deviation of the data
-        #self.lam = np.std(self.data)
 
 
 

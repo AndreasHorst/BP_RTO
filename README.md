@@ -1,5 +1,5 @@
 ```markdown
-# BP_RTO: Code for Reproducing Results from (https://www.researchsquare.com/article/rs-4528903/v1)
+## BP_RTO: Code for Reproducing Results from (https://www.researchsquare.com/article/rs-4528903/v1)
 
 This repository contains the code and scripts necessary to reproduce the results presented in the preprint:  
 **[Uncertainty Quantification for Linear Inverse Problems with Besov Prior: A Randomize-Then-Optimize Method]**

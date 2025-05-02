@@ -1,8 +1,8 @@
 ```markdown
-# BP_RTO: Code for Reproducing Results from [Research Square Preprint](https://www.researchsquare.com/article/rs-4528903/v1)
+# BP_RTO: Code for Reproducing Results from (https://www.researchsquare.com/article/rs-4528903/v1)
 
 This repository contains the code and scripts necessary to reproduce the results presented in the preprint:  
-**[Insert Paper Title Here]** ([Research Square](https://www.researchsquare.com/article/rs-4528903/v1)).
+**[Uncertainty Quantification for Linear Inverse Problems with Besov Prior: A Randomize-Then-Optimize Method]**
 
 ## Overview
 
@@ -45,16 +45,6 @@ The repository includes:
 - **`Inpainting_plot.ipynb`**: Analysis of inpainting techniques using wavelets.
 - **`Plot_Discretization_invariance.ipynb`**: Study of discretization invariance in Bayesian models.
 
-## Citation
 
-If you use this code or find it helpful, please cite the preprint:
-```
-[Insert Citation in Your Desired Format]
-```
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
-```
 
 Let me know if you'd like to add or modify anything!

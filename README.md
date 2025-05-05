@@ -7,15 +7,15 @@ This repository contains the code and scripts necessary to reproduce the results
 ## Overview
 
 The repository includes:
-- **Jupyter Notebooks**: For visualizing and analyzing results, including CT reconstruction, inpainting, and discretization invariance.
-- **Python Scripts**: Supporting modules for implementing algorithms like wavelet-based Besov priors and Bayesian deconvolution.
+- **Jupyter Notebooks**: For visualizing and analyzing results, including CT reconstruction, inpainting, and deconvolution
+- **Python Scripts**: Supporting modules for implementing algorithms like Besov priors and the Randomize-Then-Optimize method.
 - **Data Handling**: Preloaded datasets for running experiments and reproducing plots.
 
 ## Structure
-
-- `Visualization_Code/`: Contains Jupyter Notebooks for generating figures and visualizations.
-- `Inpainting_Plot_Data/`, `Comparison_Plot_Data/`, etc.: Datasets used in the analysis.
-- `blurring.py`: A utility module for simulating blurring operations.
+- `Sampling_Code/` : Contains python files with the implemented code needed for the numerical experiment and Jupyter Notebooks file
+                     that that setups the numerical experiments, carries out the sampling, and saves the results for visualization.
+- `Visualization_Code/`: Contains Jupyter Notebooks for generating figures and visualizations using data saved when running the Jupyter
+                          Notebooks from Sampling_Code/.
 
 ## Requirements
 
@@ -42,7 +42,7 @@ The repository includes:
 
 - **`CT_plot.ipynb`**: Visualizations for CT reconstruction.
 - **`Comparison_plot.ipynb`**: Comparison of sampling methods (RTO vs. NUTS).
-- **`Inpainting_plot.ipynb`**: Analysis of inpainting techniques using wavelets.
+- **`Inpainting_plot.ipynb`**: Analysis of inpainting techniques using Besov priors.
 - **`Plot_Discretization_invariance.ipynb`**: Study of discretization invariance in Bayesian models.
 
 
